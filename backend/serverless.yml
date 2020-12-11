@@ -177,7 +177,7 @@ resources:
           - IndexName: ${self:provider.environment.INDEX_NAME}
             KeySchema:
               - AttributeName: userId
-                KeyType: HASH
+                KeyType: RANGE
             Projection:
               ProjectionType: ALL
     TodosBucket:
